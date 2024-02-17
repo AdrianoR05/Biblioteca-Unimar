@@ -43,18 +43,21 @@
             // 
             // Titulo
             // 
-            this.Titulo.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.Titulo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Titulo.BackColor = System.Drawing.Color.DimGray;
             this.Titulo.Image = ((System.Drawing.Image)(resources.GetObject("Titulo.Image")));
-            this.Titulo.Location = new System.Drawing.Point(12, 12);
+            this.Titulo.Location = new System.Drawing.Point(59, 12);
             this.Titulo.Name = "Titulo";
-            this.Titulo.Size = new System.Drawing.Size(679, 84);
+            this.Titulo.Size = new System.Drawing.Size(590, 69);
             this.Titulo.TabIndex = 1;
             this.Titulo.TabStop = false;
             // 
             // registro
             // 
             this.registro.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.registro.Location = new System.Drawing.Point(262, 150);
+            this.registro.Location = new System.Drawing.Point(259, 127);
             this.registro.Name = "registro";
             this.registro.Size = new System.Drawing.Size(153, 29);
             this.registro.TabIndex = 2;
@@ -65,7 +68,7 @@
             // verPrestamo
             // 
             this.verPrestamo.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.verPrestamo.Location = new System.Drawing.Point(262, 220);
+            this.verPrestamo.Location = new System.Drawing.Point(259, 197);
             this.verPrestamo.Name = "verPrestamo";
             this.verPrestamo.Size = new System.Drawing.Size(153, 29);
             this.verPrestamo.TabIndex = 2;
@@ -75,7 +78,7 @@
             // sancionados
             // 
             this.sancionados.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.sancionados.Location = new System.Drawing.Point(262, 290);
+            this.sancionados.Location = new System.Drawing.Point(259, 267);
             this.sancionados.Name = "sancionados";
             this.sancionados.Size = new System.Drawing.Size(153, 29);
             this.sancionados.TabIndex = 2;
@@ -85,7 +88,7 @@
             // renovacion
             // 
             this.renovacion.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.renovacion.Location = new System.Drawing.Point(262, 325);
+            this.renovacion.Location = new System.Drawing.Point(259, 302);
             this.renovacion.Name = "renovacion";
             this.renovacion.Size = new System.Drawing.Size(153, 29);
             this.renovacion.TabIndex = 2;
@@ -95,7 +98,7 @@
             // librosDisp
             // 
             this.librosDisp.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.librosDisp.Location = new System.Drawing.Point(262, 255);
+            this.librosDisp.Location = new System.Drawing.Point(259, 232);
             this.librosDisp.Name = "librosDisp";
             this.librosDisp.Size = new System.Drawing.Size(153, 29);
             this.librosDisp.TabIndex = 2;
@@ -105,7 +108,7 @@
             // devolucion
             // 
             this.devolucion.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.devolucion.Location = new System.Drawing.Point(262, 360);
+            this.devolucion.Location = new System.Drawing.Point(259, 337);
             this.devolucion.Name = "devolucion";
             this.devolucion.Size = new System.Drawing.Size(153, 29);
             this.devolucion.TabIndex = 2;
@@ -115,7 +118,7 @@
             // ingresarlibro
             // 
             this.ingresarlibro.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.ingresarlibro.Location = new System.Drawing.Point(262, 395);
+            this.ingresarlibro.Location = new System.Drawing.Point(259, 372);
             this.ingresarlibro.Name = "ingresarlibro";
             this.ingresarlibro.Size = new System.Drawing.Size(153, 29);
             this.ingresarlibro.TabIndex = 2;
@@ -125,7 +128,7 @@
             // solicitud
             // 
             this.solicitud.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.solicitud.Location = new System.Drawing.Point(262, 185);
+            this.solicitud.Location = new System.Drawing.Point(259, 162);
             this.solicitud.Name = "solicitud";
             this.solicitud.Size = new System.Drawing.Size(153, 29);
             this.solicitud.TabIndex = 2;
@@ -134,10 +137,12 @@
             // 
             // InterfazMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 26F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(704, 484);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(699, 461);
             this.Controls.Add(this.ingresarlibro);
             this.Controls.Add(this.devolucion);
             this.Controls.Add(this.renovacion);
@@ -147,10 +152,13 @@
             this.Controls.Add(this.verPrestamo);
             this.Controls.Add(this.registro);
             this.Controls.Add(this.Titulo);
+            this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
             this.Name = "InterfazMenu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Biblioteca Unimar";
             this.Load += new System.EventHandler(this.InterfazMenu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Titulo)).EndInit();
