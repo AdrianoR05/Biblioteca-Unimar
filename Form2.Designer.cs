@@ -99,7 +99,7 @@ namespace Biblioteca_Unimar
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(312, 124);
+            this.textBox1.Location = new System.Drawing.Point(312, 127);
             this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(163, 22);
@@ -109,7 +109,7 @@ namespace Biblioteca_Unimar
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(312, 163);
+            this.textBox2.Location = new System.Drawing.Point(312, 161);
             this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(163, 22);
@@ -150,7 +150,7 @@ namespace Biblioteca_Unimar
             "Idiomas Modernos",
             "Idiomas - Mencion Turismo",
             "Psicologia"});
-            this.comboBox1.Location = new System.Drawing.Point(312, 232);
+            this.comboBox1.Location = new System.Drawing.Point(312, 229);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(163, 23);
