@@ -38,6 +38,7 @@
             this.devolucion = new System.Windows.Forms.Button();
             this.ingresarlibro = new System.Windows.Forms.Button();
             this.solicitud = new System.Windows.Forms.Button();
+            this.btncerrar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Titulo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,7 +58,8 @@
             // registro
             // 
             this.registro.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.registro.Location = new System.Drawing.Point(259, 127);
+            this.registro.Font = new System.Drawing.Font("Leelawadee", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.registro.Location = new System.Drawing.Point(262, 109);
             this.registro.Name = "registro";
             this.registro.Size = new System.Drawing.Size(153, 29);
             this.registro.TabIndex = 2;
@@ -68,7 +70,8 @@
             // verPrestamo
             // 
             this.verPrestamo.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.verPrestamo.Location = new System.Drawing.Point(259, 197);
+            this.verPrestamo.Font = new System.Drawing.Font("Leelawadee", 11.25F);
+            this.verPrestamo.Location = new System.Drawing.Point(262, 179);
             this.verPrestamo.Name = "verPrestamo";
             this.verPrestamo.Size = new System.Drawing.Size(153, 29);
             this.verPrestamo.TabIndex = 2;
@@ -78,7 +81,8 @@
             // sancionados
             // 
             this.sancionados.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.sancionados.Location = new System.Drawing.Point(259, 267);
+            this.sancionados.Font = new System.Drawing.Font("Leelawadee", 11.25F);
+            this.sancionados.Location = new System.Drawing.Point(262, 249);
             this.sancionados.Name = "sancionados";
             this.sancionados.Size = new System.Drawing.Size(153, 29);
             this.sancionados.TabIndex = 2;
@@ -88,7 +92,8 @@
             // renovacion
             // 
             this.renovacion.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.renovacion.Location = new System.Drawing.Point(259, 302);
+            this.renovacion.Font = new System.Drawing.Font("Leelawadee", 11.25F);
+            this.renovacion.Location = new System.Drawing.Point(262, 284);
             this.renovacion.Name = "renovacion";
             this.renovacion.Size = new System.Drawing.Size(153, 29);
             this.renovacion.TabIndex = 2;
@@ -98,7 +103,8 @@
             // librosDisp
             // 
             this.librosDisp.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.librosDisp.Location = new System.Drawing.Point(259, 232);
+            this.librosDisp.Font = new System.Drawing.Font("Leelawadee", 11.25F);
+            this.librosDisp.Location = new System.Drawing.Point(262, 214);
             this.librosDisp.Name = "librosDisp";
             this.librosDisp.Size = new System.Drawing.Size(153, 29);
             this.librosDisp.TabIndex = 2;
@@ -108,7 +114,8 @@
             // devolucion
             // 
             this.devolucion.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.devolucion.Location = new System.Drawing.Point(259, 337);
+            this.devolucion.Font = new System.Drawing.Font("Leelawadee", 11.25F);
+            this.devolucion.Location = new System.Drawing.Point(262, 319);
             this.devolucion.Name = "devolucion";
             this.devolucion.Size = new System.Drawing.Size(153, 29);
             this.devolucion.TabIndex = 2;
@@ -118,7 +125,8 @@
             // ingresarlibro
             // 
             this.ingresarlibro.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.ingresarlibro.Location = new System.Drawing.Point(259, 372);
+            this.ingresarlibro.Font = new System.Drawing.Font("Leelawadee", 11.25F);
+            this.ingresarlibro.Location = new System.Drawing.Point(262, 354);
             this.ingresarlibro.Name = "ingresarlibro";
             this.ingresarlibro.Size = new System.Drawing.Size(153, 29);
             this.ingresarlibro.TabIndex = 2;
@@ -128,12 +136,25 @@
             // solicitud
             // 
             this.solicitud.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.solicitud.Location = new System.Drawing.Point(259, 162);
+            this.solicitud.Font = new System.Drawing.Font("Leelawadee", 11.25F);
+            this.solicitud.Location = new System.Drawing.Point(262, 144);
             this.solicitud.Name = "solicitud";
             this.solicitud.Size = new System.Drawing.Size(153, 29);
             this.solicitud.TabIndex = 2;
             this.solicitud.Text = "Solicitar préstamo";
             this.solicitud.UseVisualStyleBackColor = true;
+            // 
+            // btncerrar
+            // 
+            this.btncerrar.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btncerrar.Font = new System.Drawing.Font("Leelawadee", 11.25F);
+            this.btncerrar.Location = new System.Drawing.Point(262, 389);
+            this.btncerrar.Name = "btncerrar";
+            this.btncerrar.Size = new System.Drawing.Size(153, 29);
+            this.btncerrar.TabIndex = 2;
+            this.btncerrar.Text = "Cerrar sistema";
+            this.btncerrar.UseVisualStyleBackColor = true;
+            this.btncerrar.Click += new System.EventHandler(this.btncerrar_Click);
             // 
             // InterfazMenu
             // 
@@ -143,6 +164,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(699, 461);
+            this.Controls.Add(this.btncerrar);
             this.Controls.Add(this.ingresarlibro);
             this.Controls.Add(this.devolucion);
             this.Controls.Add(this.renovacion);
@@ -176,6 +198,7 @@
         private System.Windows.Forms.Button devolucion;
         private System.Windows.Forms.Button ingresarlibro;
         private System.Windows.Forms.Button solicitud;
+        private System.Windows.Forms.Button btncerrar;
     }
 }
 

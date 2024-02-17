@@ -32,5 +32,10 @@ namespace Biblioteca_Unimar
             Form2 registro = new Form2();
             registro.Show();
         }
+
+        private void btncerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
