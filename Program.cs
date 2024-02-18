@@ -16,7 +16,7 @@ namespace Biblioteca_Unimar
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new InterfazMenu());
+            Application.Run(new interfazMenu());
         }
     }
 }

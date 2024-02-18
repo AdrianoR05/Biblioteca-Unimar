@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Biblioteca_Unimar
 {
-    public partial class InterfazMenu : Form
+    public partial class interfazMenu : Form
     {
-        public InterfazMenu()
+        public interfazMenu()
         {
             InitializeComponent();
         }

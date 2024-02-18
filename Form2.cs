@@ -38,7 +38,7 @@ namespace Biblioteca_Unimar
             cedula = textBox3.Text;
             carrera = comboBox1.Text;
             Alumnos alumno = new Alumnos(nombre, apellido, cedula, carrera);
-            MessageBox.Show("Alumno registrado con éxito");
+            MessageBox.Show("Alumno registrado con éxito", "Confirmado", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
         }
 
@@ -51,7 +51,7 @@ namespace Biblioteca_Unimar
         {
             if (!(char.IsLetter(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
             {
-                MessageBox.Show("Sólo se permiten letras", "Denegado", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Sólo se permiten letras", "Denegado", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 e.Handled = true;
                 return;
             }
@@ -61,7 +61,7 @@ namespace Biblioteca_Unimar
         {
             if (!(char.IsLetter(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
             {
-                MessageBox.Show("Solo se permiten letras", "Denegado", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Solo se permiten letras", "Denegado", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 e.Handled = true;
                 return;
             }
@@ -71,7 +71,7 @@ namespace Biblioteca_Unimar
         {
             if (!(char.IsDigit(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
             {
-                MessageBox.Show("Solo se permiten numeros", "Denegado", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Solo se permiten numeros", "Denegado", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 e.Handled = true;
                 return;
             }
