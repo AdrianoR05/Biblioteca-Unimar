@@ -188,7 +188,8 @@ namespace Biblioteca_Unimar
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.BackgroundImage = global::Biblioteca_Unimar.Properties.Resources.Registro_usuario;
-            this.ClientSize = new System.Drawing.Size(691, 393);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(707, 393);
             this.Controls.Add(this.volvermenu);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button1);
@@ -199,6 +200,7 @@ namespace Biblioteca_Unimar
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
