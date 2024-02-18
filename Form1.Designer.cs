@@ -86,6 +86,7 @@
             this.sancionados.TabIndex = 2;
             this.sancionados.Text = "Alumnos sancionados";
             this.sancionados.UseVisualStyleBackColor = false;
+            this.sancionados.Click += new System.EventHandler(this.sancionados_Click);
             // 
             // renovacion
             // 
@@ -101,6 +102,7 @@
             this.renovacion.TabIndex = 2;
             this.renovacion.Text = "Renovar libro";
             this.renovacion.UseVisualStyleBackColor = false;
+            this.renovacion.Click += new System.EventHandler(this.renovacion_Click);
             // 
             // librosDisp
             // 
@@ -132,6 +134,7 @@
             this.devolucion.TabIndex = 2;
             this.devolucion.Text = "Devolución";
             this.devolucion.UseVisualStyleBackColor = false;
+            this.devolucion.Click += new System.EventHandler(this.devolucion_Click);
             // 
             // ingresarLibro
             // 
@@ -147,6 +150,7 @@
             this.ingresarLibro.TabIndex = 2;
             this.ingresarLibro.Text = "Ingresar nuevo libro";
             this.ingresarLibro.UseVisualStyleBackColor = false;
+            this.ingresarLibro.Click += new System.EventHandler(this.ingresarLibro_Click);
             // 
             // solicitud
             // 

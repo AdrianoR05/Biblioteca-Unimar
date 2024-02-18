@@ -1,6 +1,6 @@
 ﻿namespace Biblioteca_Unimar
 {
-    partial class formLibrosDispo
+    partial class formRenovarLibro
     {
         /// <summary>
         /// Required designer variable.
@@ -28,26 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formLibrosDispo));
-            this.volvermenu = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formRenovarLibro));
+            this.btncerrar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // volvermenu
+            // btncerrar
             // 
-            this.volvermenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(127)))), ((int)(((byte)(155)))));
-            this.volvermenu.FlatAppearance.BorderSize = 0;
-            this.volvermenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.volvermenu.Font = new System.Drawing.Font("Leelawadee", 11.5F);
-            this.volvermenu.ForeColor = System.Drawing.Color.White;
-            this.volvermenu.Location = new System.Drawing.Point(279, 336);
-            this.volvermenu.Name = "volvermenu";
-            this.volvermenu.Size = new System.Drawing.Size(127, 30);
-            this.volvermenu.TabIndex = 13;
-            this.volvermenu.Text = "Volver al menú";
-            this.volvermenu.UseVisualStyleBackColor = false;
-            this.volvermenu.Click += new System.EventHandler(this.volvermenu_Click);
+            this.btncerrar.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btncerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(127)))), ((int)(((byte)(155)))));
+            this.btncerrar.FlatAppearance.BorderSize = 0;
+            this.btncerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncerrar.Font = new System.Drawing.Font("Leelawadee", 11.25F);
+            this.btncerrar.ForeColor = System.Drawing.Color.White;
+            this.btncerrar.Location = new System.Drawing.Point(271, 333);
+            this.btncerrar.Name = "btncerrar";
+            this.btncerrar.Size = new System.Drawing.Size(155, 29);
+            this.btncerrar.TabIndex = 3;
+            this.btncerrar.Text = "Volver al menú";
+            this.btncerrar.UseVisualStyleBackColor = false;
+            this.btncerrar.Click += new System.EventHandler(this.btncerrar_Click);
             // 
-            // formLibrosDispo
+            // formRenovarLibro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -55,20 +56,19 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(691, 393);
-            this.Controls.Add(this.volvermenu);
+            this.Controls.Add(this.btncerrar);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "formLibrosDispo";
+            this.Name = "formRenovarLibro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Libros Diponibles";
-            this.Load += new System.EventHandler(this.formLibrosDispo_Load);
+            this.Text = "Renovar libro";
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button volvermenu;
+        private System.Windows.Forms.Button btncerrar;
     }
 }
