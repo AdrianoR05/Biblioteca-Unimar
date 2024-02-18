@@ -160,6 +160,7 @@
             this.solicitud.TabIndex = 2;
             this.solicitud.Text = "Solicitar préstamo";
             this.solicitud.UseVisualStyleBackColor = false;
+            this.solicitud.Click += new System.EventHandler(this.solicitud_Click);
             // 
             // btncerrar
             // 

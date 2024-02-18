@@ -21,5 +21,10 @@ namespace Biblioteca_Unimar
         {
 
         }
+
+        private void volvermenu_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

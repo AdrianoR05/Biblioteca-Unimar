@@ -29,7 +29,23 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
+            this.volvermenu = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // volvermenu
+            // 
+            this.volvermenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(127)))), ((int)(((byte)(155)))));
+            this.volvermenu.FlatAppearance.BorderSize = 0;
+            this.volvermenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.volvermenu.Font = new System.Drawing.Font("Leelawadee", 11.5F);
+            this.volvermenu.ForeColor = System.Drawing.Color.White;
+            this.volvermenu.Location = new System.Drawing.Point(282, 335);
+            this.volvermenu.Name = "volvermenu";
+            this.volvermenu.Size = new System.Drawing.Size(127, 30);
+            this.volvermenu.TabIndex = 13;
+            this.volvermenu.Text = "Volver al menú";
+            this.volvermenu.UseVisualStyleBackColor = false;
+            this.volvermenu.Click += new System.EventHandler(this.volvermenu_Click);
             // 
             // Form3
             // 
@@ -39,6 +55,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(691, 393);
+            this.Controls.Add(this.volvermenu);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -50,5 +67,7 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.Button volvermenu;
     }
 }
