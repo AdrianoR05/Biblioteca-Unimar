@@ -1,6 +1,6 @@
 ﻿namespace Biblioteca_Unimar
 {
-    partial class formSolicitud
+    partial class formPrestamos
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formSolicitud));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formPrestamos));
             this.volvermenu = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -39,7 +39,7 @@
             this.volvermenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.volvermenu.Font = new System.Drawing.Font("Leelawadee", 11.5F);
             this.volvermenu.ForeColor = System.Drawing.Color.White;
-            this.volvermenu.Location = new System.Drawing.Point(282, 335);
+            this.volvermenu.Location = new System.Drawing.Point(283, 334);
             this.volvermenu.Name = "volvermenu";
             this.volvermenu.Size = new System.Drawing.Size(127, 30);
             this.volvermenu.TabIndex = 13;
@@ -47,9 +47,9 @@
             this.volvermenu.UseVisualStyleBackColor = false;
             this.volvermenu.Click += new System.EventHandler(this.volvermenu_Click);
             // 
-            // formSolicitud
+            // formPrestamos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
@@ -57,11 +57,12 @@
             this.ClientSize = new System.Drawing.Size(691, 393);
             this.Controls.Add(this.volvermenu);
             this.DoubleBuffered = true;
+            this.Font = new System.Drawing.Font("Leelawadee", 11.25F);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
-            this.Name = "formSolicitud";
-            this.Text = "Solicitar Préstamo";
-            this.Load += new System.EventHandler(this.Form3_Load);
+            this.Name = "formPrestamos";
+            this.Text = "Ver préstamos";
             this.ResumeLayout(false);
 
         }

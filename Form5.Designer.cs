@@ -1,6 +1,6 @@
 ﻿namespace Biblioteca_Unimar
 {
-    partial class formSolicitud
+    partial class formLibrosDispo
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formSolicitud));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formLibrosDispo));
             this.volvermenu = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -39,7 +39,7 @@
             this.volvermenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.volvermenu.Font = new System.Drawing.Font("Leelawadee", 11.5F);
             this.volvermenu.ForeColor = System.Drawing.Color.White;
-            this.volvermenu.Location = new System.Drawing.Point(282, 335);
+            this.volvermenu.Location = new System.Drawing.Point(279, 336);
             this.volvermenu.Name = "volvermenu";
             this.volvermenu.Size = new System.Drawing.Size(127, 30);
             this.volvermenu.TabIndex = 13;
@@ -47,7 +47,7 @@
             this.volvermenu.UseVisualStyleBackColor = false;
             this.volvermenu.Click += new System.EventHandler(this.volvermenu_Click);
             // 
-            // formSolicitud
+            // formLibrosDispo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -59,9 +59,8 @@
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "formSolicitud";
-            this.Text = "Solicitar Préstamo";
-            this.Load += new System.EventHandler(this.Form3_Load);
+            this.Name = "formLibrosDispo";
+            this.Text = "Libros Diponibles";
             this.ResumeLayout(false);
 
         }

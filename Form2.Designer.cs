@@ -3,7 +3,7 @@ using System.Windows.Forms;
 
 namespace Biblioteca_Unimar
 {
-    partial class Form2
+    partial class formRegistro
     {
         /// <summary>
         /// Required designer variable.
@@ -31,7 +31,7 @@ namespace Biblioteca_Unimar
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formRegistro));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -181,7 +181,7 @@ namespace Biblioteca_Unimar
             this.volvermenu.UseVisualStyleBackColor = false;
             this.volvermenu.Click += new System.EventHandler(this.volvermenu_Click);
             // 
-            // Form2
+            // formRegistro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -205,7 +205,7 @@ namespace Biblioteca_Unimar
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
-            this.Name = "Form2";
+            this.Name = "formRegistro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro de alumno";
             this.Load += new System.EventHandler(this.Form2_Load);

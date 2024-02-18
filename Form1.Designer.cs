@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InterfazMenu));
-            this.registro = new System.Windows.Forms.Button();
+            this.formMenu = new System.Windows.Forms.Button();
             this.verPrestamo = new System.Windows.Forms.Button();
             this.sancionados = new System.Windows.Forms.Button();
             this.renovacion = new System.Windows.Forms.Button();
@@ -40,21 +40,21 @@
             this.btncerrar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // registro
+            // formMenu
             // 
-            this.registro.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.registro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(127)))), ((int)(((byte)(155)))));
-            this.registro.FlatAppearance.BorderSize = 0;
-            this.registro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.registro.Font = new System.Drawing.Font("Leelawadee", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.registro.ForeColor = System.Drawing.Color.White;
-            this.registro.Location = new System.Drawing.Point(263, 127);
-            this.registro.Name = "registro";
-            this.registro.Size = new System.Drawing.Size(153, 29);
-            this.registro.TabIndex = 2;
-            this.registro.Text = "Registrar Alumno";
-            this.registro.UseVisualStyleBackColor = false;
-            this.registro.Click += new System.EventHandler(this.registro_Click);
+            this.formMenu.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.formMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(127)))), ((int)(((byte)(155)))));
+            this.formMenu.FlatAppearance.BorderSize = 0;
+            this.formMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.formMenu.Font = new System.Drawing.Font("Leelawadee", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.formMenu.ForeColor = System.Drawing.Color.White;
+            this.formMenu.Location = new System.Drawing.Point(182, 179);
+            this.formMenu.Name = "formMenu";
+            this.formMenu.Size = new System.Drawing.Size(153, 29);
+            this.formMenu.TabIndex = 2;
+            this.formMenu.Text = "Registrar Alumno";
+            this.formMenu.UseVisualStyleBackColor = false;
+            this.formMenu.Click += new System.EventHandler(this.registro_Click);
             // 
             // verPrestamo
             // 
@@ -64,12 +64,13 @@
             this.verPrestamo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.verPrestamo.Font = new System.Drawing.Font("Leelawadee", 11.25F);
             this.verPrestamo.ForeColor = System.Drawing.Color.White;
-            this.verPrestamo.Location = new System.Drawing.Point(263, 197);
+            this.verPrestamo.Location = new System.Drawing.Point(182, 249);
             this.verPrestamo.Name = "verPrestamo";
             this.verPrestamo.Size = new System.Drawing.Size(153, 29);
             this.verPrestamo.TabIndex = 2;
             this.verPrestamo.Text = "Ver préstamos activos";
             this.verPrestamo.UseVisualStyleBackColor = false;
+            this.verPrestamo.Click += new System.EventHandler(this.verPrestamo_Click);
             // 
             // sancionados
             // 
@@ -79,7 +80,7 @@
             this.sancionados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sancionados.Font = new System.Drawing.Font("Leelawadee", 11.25F);
             this.sancionados.ForeColor = System.Drawing.Color.White;
-            this.sancionados.Location = new System.Drawing.Point(263, 267);
+            this.sancionados.Location = new System.Drawing.Point(350, 179);
             this.sancionados.Name = "sancionados";
             this.sancionados.Size = new System.Drawing.Size(153, 29);
             this.sancionados.TabIndex = 2;
@@ -94,7 +95,7 @@
             this.renovacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.renovacion.Font = new System.Drawing.Font("Leelawadee", 11.25F);
             this.renovacion.ForeColor = System.Drawing.Color.White;
-            this.renovacion.Location = new System.Drawing.Point(263, 302);
+            this.renovacion.Location = new System.Drawing.Point(350, 214);
             this.renovacion.Name = "renovacion";
             this.renovacion.Size = new System.Drawing.Size(153, 29);
             this.renovacion.TabIndex = 2;
@@ -109,12 +110,13 @@
             this.librosDisp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.librosDisp.Font = new System.Drawing.Font("Leelawadee", 11.25F);
             this.librosDisp.ForeColor = System.Drawing.Color.White;
-            this.librosDisp.Location = new System.Drawing.Point(263, 232);
+            this.librosDisp.Location = new System.Drawing.Point(182, 284);
             this.librosDisp.Name = "librosDisp";
             this.librosDisp.Size = new System.Drawing.Size(153, 29);
             this.librosDisp.TabIndex = 2;
             this.librosDisp.Text = "Libros disponibles";
             this.librosDisp.UseVisualStyleBackColor = false;
+            this.librosDisp.Click += new System.EventHandler(this.librosDisp_Click);
             // 
             // devolucion
             // 
@@ -124,7 +126,7 @@
             this.devolucion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.devolucion.Font = new System.Drawing.Font("Leelawadee", 11.25F);
             this.devolucion.ForeColor = System.Drawing.Color.White;
-            this.devolucion.Location = new System.Drawing.Point(263, 337);
+            this.devolucion.Location = new System.Drawing.Point(350, 249);
             this.devolucion.Name = "devolucion";
             this.devolucion.Size = new System.Drawing.Size(153, 29);
             this.devolucion.TabIndex = 2;
@@ -139,7 +141,7 @@
             this.ingresarlibro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ingresarlibro.Font = new System.Drawing.Font("Leelawadee", 11.25F);
             this.ingresarlibro.ForeColor = System.Drawing.Color.White;
-            this.ingresarlibro.Location = new System.Drawing.Point(263, 372);
+            this.ingresarlibro.Location = new System.Drawing.Point(350, 284);
             this.ingresarlibro.Name = "ingresarlibro";
             this.ingresarlibro.Size = new System.Drawing.Size(153, 29);
             this.ingresarlibro.TabIndex = 2;
@@ -154,7 +156,7 @@
             this.solicitud.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.solicitud.Font = new System.Drawing.Font("Leelawadee", 11.25F);
             this.solicitud.ForeColor = System.Drawing.Color.White;
-            this.solicitud.Location = new System.Drawing.Point(263, 162);
+            this.solicitud.Location = new System.Drawing.Point(182, 214);
             this.solicitud.Name = "solicitud";
             this.solicitud.Size = new System.Drawing.Size(153, 29);
             this.solicitud.TabIndex = 2;
@@ -170,7 +172,7 @@
             this.btncerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btncerrar.Font = new System.Drawing.Font("Leelawadee", 11.25F);
             this.btncerrar.ForeColor = System.Drawing.Color.White;
-            this.btncerrar.Location = new System.Drawing.Point(263, 407);
+            this.btncerrar.Location = new System.Drawing.Point(268, 319);
             this.btncerrar.Name = "btncerrar";
             this.btncerrar.Size = new System.Drawing.Size(153, 29);
             this.btncerrar.TabIndex = 2;
@@ -195,7 +197,7 @@
             this.Controls.Add(this.librosDisp);
             this.Controls.Add(this.sancionados);
             this.Controls.Add(this.verPrestamo);
-            this.Controls.Add(this.registro);
+            this.Controls.Add(this.formMenu);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -211,7 +213,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button registro;
+        private System.Windows.Forms.Button formMenu;
         private System.Windows.Forms.Button verPrestamo;
         private System.Windows.Forms.Button sancionados;
         private System.Windows.Forms.Button renovacion;

@@ -26,13 +26,13 @@ namespace Biblioteca_Unimar
         {
 
         }
-
+        //Enviando al usuario al form de registro
         private void registro_Click(object sender, EventArgs e)
         {
-            Form2 registro = new Form2();
+            formRegistro registro = new formRegistro();
             registro.Show();
         }
-
+        //cerrar ventana
         private void btncerrar_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -40,8 +40,20 @@ namespace Biblioteca_Unimar
 
         private void solicitud_Click(object sender, EventArgs e)
         {
-            Form3 form3 = new Form3();
-            form3.Show();
+            formSolicitud solicitud = new formSolicitud();
+            solicitud.Show();
+        }
+
+        private void verPrestamo_Click(object sender, EventArgs e)
+        {
+            formPrestamos verPrestamo = new formPrestamos();
+            verPrestamo.Show();
+        }
+
+        private void librosDisp_Click(object sender, EventArgs e)
+        {
+            formLibrosDispo librosDispo = new formLibrosDispo();
+            librosDispo.Show();
         }
     }
 }
